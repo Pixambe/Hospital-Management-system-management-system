@@ -3,7 +3,7 @@ import styles from './dashBoard.module.css'
 
 
 
-export default function DashboardLayout ({ children, head, recent  }){
+export default function DashboardLayout ({menuList, head, recent, buttonName, tableData }) {
     return (
         <div className={styles.opdPage}>
         <div className={styles.bg_overlay}>
@@ -15,34 +15,7 @@ export default function DashboardLayout ({ children, head, recent  }){
               <div className={styles.left_line}></div>
               <div className={styles.menu}>
                 <ul className={styles.menuList}>
-                  <li>
-                    <Link href="./opd" legacyBehavior>
-                      <a className={styles.dashboard}>
-                        <img src="/icons/dashboard.svg" />
-                        <h1>Dashboard</h1>
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="./lab" legacyBehavior>
-                      <a className={styles.dashboard}>
-                        <img src="/icons/nurse2.png" />
-                        <h1>Nurses</h1>
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="" legacyBehavior >
-                      <a className={styles.dashboard}>
-                        <img src="/icons/doctor2.png" />
-                        <h1>Doctors</h1>
-                      </a>
-                    </Link>
-                  </li>
-                  <li>1</li>
-                  <li>1</li>
-                  <li>1</li>
-                  <li>1</li>
+                  {menuList}
                 </ul>
               </div>
             </div>
@@ -62,7 +35,7 @@ export default function DashboardLayout ({ children, head, recent  }){
   
                 <div className={styles.vertical_line}></div>
                 <div className={styles.new_rcd_btn}>
-                  <a>New Record</a>
+                  <a>New {buttonName}</a>
                 </div>
               </div>
               <div className={styles.profileBar}>
@@ -87,34 +60,7 @@ export default function DashboardLayout ({ children, head, recent  }){
                 <div className={styles.horizontalLine}></div>
                 <div className={styles.bookingsListBox}>
                   <table>
-                    <tr className={styles.tableHead}>
-                      <th>Patient ID</th>
-                      <th>Patient Name</th>
-                      <th>Age</th>
-                      <th>Gender</th>
-                      <th>Date</th>
-                    </tr>
-                    <tr>
-                      <td>Jill</td>
-                      <td>Smith</td>
-                      <td>50</td>
-                      <td>male</td>
-                      <td>12-12-2023</td>
-                    </tr>
-                    <tr>
-                      <td>Eve</td>
-                      <td>Jackson</td>
-                      <td>94</td>
-                      <td>male</td>
-                      <td>12-12-2023</td>
-                    </tr>
-                    <tr>
-                      <td>John</td>
-                      <td>Doe</td>
-                      <td>80</td>
-                      <td>male</td>
-                      <td>12-12-2023</td>
-                    </tr>
+                    {tableData}
                   </table>
                 </div>
               </div>
