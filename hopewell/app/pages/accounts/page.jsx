@@ -5,7 +5,7 @@ export default function account() {
   return (
     <div>
       <DashboardLayout
-       head="Dashboard - Accounts" 
+       head="Accounts" 
        recent="Pending Bills"
 
         />

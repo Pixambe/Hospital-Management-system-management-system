@@ -3,7 +3,9 @@ import DashboardLayout from "../DashboardLayout";
 export default function Store() {
     return(
         <main>
-            <DashboardLayout/>
+            <DashboardLayout
+            head='Store room'
+            />
         </main>
     )
 }

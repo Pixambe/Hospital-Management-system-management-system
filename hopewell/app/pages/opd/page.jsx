@@ -7,7 +7,7 @@ export default function opd() {
     <main>
       <DashboardLayout
       recent='Recent bookings'
-      head="Dashboard - OPD"
+      head="OPD"
       tableData={
         <tr>
           <th>Patient ID</th>

@@ -4,7 +4,7 @@ export default function Lab() {
   return (
     <div>
       <DashboardLayout
-        head="Dashboard - Lab"
+        head="LABORATORY"
         recent="Lab requests"
         tableData={
           <tr>
