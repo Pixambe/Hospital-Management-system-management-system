@@ -1,9 +1,10 @@
-import DashboardLayout from "../DashboardLayout";
+import DashboardLayout from '../_myLayouts/DashboardLayout';
+import styles from './accounts.module.css'
 
 
 export default function account() {
   return (
-    <div>
+    <div className={styles.main}>
       <DashboardLayout
        head="Accounts" 
        recent="Pending Bills"

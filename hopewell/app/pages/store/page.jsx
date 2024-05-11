@@ -1,8 +1,9 @@
-import DashboardLayout from "../DashboardLayout";
+import DashboardLayout from "../_myLayouts/DashboardLayout";
+import styles from './store.module.css'
 
 export default function Store() {
     return(
-        <main>
+        <main className={styles.main}>
             <DashboardLayout
             head='Store room'
             />

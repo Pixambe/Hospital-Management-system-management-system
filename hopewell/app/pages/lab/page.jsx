@@ -1,8 +1,9 @@
-import DashboardLayout from "../DashboardLayout";
+import DashboardLayout from "../_myLayouts/DashboardLayout";
+import styles from './lab.module.css'
 
 export default function Lab() {
   return (
-    <div>
+    <div className={styles.main}>
       <DashboardLayout
         head="LABORATORY"
         recent="Lab requests"

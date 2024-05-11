@@ -1,11 +1,12 @@
-import DashboardLayout from "../DashboardLayout";
+import DashboardLayout from "../_myLayouts/DashboardLayout";
 import styles from "./opd.module.css";
 import Link from "next/link";
 
 export default function opd() {
   return (
-    <main>
+    <main className={styles.main}>
       <DashboardLayout
+      backgoundImage="./public/assets/sethoscope.jpg"
       recent='Recent bookings'
       head="OPD"
       tableData={

@@ -1,7 +1,8 @@
 import Link from "next/link";
-import styles from "./dashBoard.module.css";
+import styles from "./layout_styles/dashBoard.module.css";
 
 export default function DashboardLayout({
+  backgoundImage,
   menuList,
   head,
   recent,
@@ -13,8 +14,17 @@ export default function DashboardLayout({
   statBox4,
   rightMenuBox,
 }) {
+  const Background = {
+    backgoundImage: `url(${ backgoundImage })`,
+    width: "100%",
+    height: "100%",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+  };
+
   return (
-    <div className={styles.opdPage}>
+    
       <div className={styles.bg_overlay}>
         <div className={styles.content}>
           <div className={styles.left}>
@@ -70,11 +80,9 @@ export default function DashboardLayout({
               </div>
             </div>
           </div>
-          <div className={styles.right}>
-            {rightMenuBox}
-          </div>
+          <div className={styles.right}>{rightMenuBox}</div>
         </div>
       </div>
-    </div>
+    
   );
 }

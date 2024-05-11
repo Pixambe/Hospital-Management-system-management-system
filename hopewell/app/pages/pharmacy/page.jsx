@@ -1,10 +1,11 @@
-import DashboardLayout from "../DashboardLayout";
+import DashboardLayout from "../_myLayouts/DashboardLayout";
+import styles from './pharmacy.module.css'
 
 
 
 export default function Pharmacy() {
     return(
-        <main>
+        <main className={styles.main}>
             <DashboardLayout/>
             
         </main>

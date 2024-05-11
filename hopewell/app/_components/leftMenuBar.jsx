@@ -1,6 +1,10 @@
+import styles from "./component_styles/nameCard.module.css"
+
+
+
 export default function LeftMenuBar () {
     return (
-        <div>
+        <div className={styles.card}>
             
         </div>
     )
