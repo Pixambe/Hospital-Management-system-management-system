@@ -1,0 +1,15 @@
+.card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+
+  }
+  
+  .date, .time {
+    margin: 5px 0;
+    font-size: 0.8rem;
+  }
+
+  
+  

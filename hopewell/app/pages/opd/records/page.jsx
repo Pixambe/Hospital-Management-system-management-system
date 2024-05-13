@@ -1,7 +1,7 @@
 import styles from "./record.module.css";
 import SubPagesLayout from "../../_myLayouts/subPagesLayout";
 import NameCard from "../../../_components/nameCard";
-import VitalCard from "../../../_components/VitalCard";
+import VitalCard from "../../../_components/vitalCard";
 
 export default function recordpage() {
   return (
