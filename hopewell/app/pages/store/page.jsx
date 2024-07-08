@@ -6,6 +6,7 @@ export default function Store() {
         <main className={styles.main}>
             <DashboardLayout
             head='Store room'
+            link="./"
             />
         </main>
     )

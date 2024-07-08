@@ -1,7 +1,13 @@
+'use client';
 import styles from './component_styles/nameCard.module.css'
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+
 
 
 export default function NameCard (prop) {
+   
+
     return (
         <div className={styles.card}>
             <div className={styles.imgCard}></div>

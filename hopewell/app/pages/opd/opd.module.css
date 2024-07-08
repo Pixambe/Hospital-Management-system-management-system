@@ -6,3 +6,13 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.table thead{
+  font-weight: bolder;
+}
+
+.searchBox {
+  width: 100%;
+  height: 20%;
+  
+}

@@ -8,7 +8,7 @@ export default function account() {
       <DashboardLayout
        head="Accounts" 
        recent="Pending Bills"
-
+link=""
         />
     </div>
   );

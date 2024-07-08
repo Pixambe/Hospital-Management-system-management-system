@@ -1,0 +1,22 @@
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    
+
+}
+
+
+.patientDetails {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: aliceblue;
+}
+
+.patientDetails  li {
+    background-color: rgb(98, 98, 214);
+
+}

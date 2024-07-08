@@ -96,11 +96,11 @@
   width: 150px;
 }
 
-.inputRow3 {
-  
-}
 
-.submit {
+
+
+
+.submitBtn {
   width: 200px;
   height: 30px;
   background-color: #0BAB4B;
@@ -111,3 +111,30 @@
   border-radius: 20px;
   margin-top: 10px;
 }
+
+.submitted-message,
+.failed-message {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.failed-message {
+  color: red;
+  position: absolute;
+  background-color: #f8d7da;
+}
+
+.failed-message {
+  color: #0BAB4B;
+  background-color: #d9f7d9;
+  position: absolute;
+}
+
+.submitBtn:active {
+  background-color: #08853a;
+  color: rgb(190, 190, 190);
+}
+
+
